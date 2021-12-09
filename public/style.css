@@ -1,0 +1,125 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+	font-size: 16px;
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+  margin: 30px auto 30px auto;
+  width: 1100px;
+  height: 900px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0px auto 0px auto;
+}
+
+#solve, #check {
+  width: 500px;
+}
+
+#solve, #check, #server, .grid {
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.15), 0 7px 8px rgba(255, 255, 255, 0.17);
+}
+
+textarea {
+  margin: 15px 3px 15px 0px;
+  font-family: inherit;
+}
+
+#solveLine {
+  margin-top: -3px;
+}
+
+#count {
+  float: left;
+  font-size: 12px;
+  margin: 10px 0px 0px 15px;
+  vertical-align: bottom;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="button"] {
+  height: 27px;
+  border-radius: 3px;
+  background-color: rgba(175, 215, 255, 0.8);
+  border: 1px solid rgba(175, 215, 255, 1);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 3px 8px 3px 8px;
+  margin: 0px 0px 10px 0px;
+}
+
+input[type="text"] {
+  width: 30px;
+  font-family: inherit;
+  margin-left: 5px;
+}
+
+#checkValue {
+  margin-left: 50px;
+}
+
+#server {
+  width: 1060px;
+  height: 40px;
+  margin: 0px 0px 50px 0px;
+}
+
+#sudoku-grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.yAxisLegend {
+  margin-top: 56px;
+}
+
+.yAxisLegend, .xAxisLegend {
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-spacing: 0;
+}
+
+.yAxisLegend tr td, .xAxisLegend tr td {
+  background-color: white;
+  color: black;
+}
+
+.grid {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-spacing: 0;
+}
+
+td {
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+}
+
+#rowC, .C1, .C2, .C3, .C4, .C5, .C6, .C7, .C8, .C9, #rowF, .F1, .F2, .F3, .F4, .F5, .F6, .F7, .F8, .F9 {
+  border-bottom: 3px solid white;
+}
+
+#column3, .A3, .B3, .C3, .D3, .E3, .F3, .G3, .H3, .I3, #column6, .A6, .B6, .C6, .D6, .E6, .F6, .G6, .H6, .I6 {
+  border-right: 3px solid white;
+}
+
+.sudoku-input {
+  text-align: center;
+}
+
+.initial {
+  background-color: rgba(160, 35, 0, 0.6);
+}
+
+.check {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  color: black;
+}
